@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
+    "./app/components/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
@@ -17,7 +18,7 @@ module.exports = {
         base: '1.125rem',
         'heading-m': '1.5rem',
         'heading-l': '3rem',
-        'heading-m': '5.5rem',
+        'heading-xl': '5.5rem',
       },
       fontFamily: {
         sans: ['var(--font-space-grotesk)']
