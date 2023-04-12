@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1, h2, h3, a {
+  @apply text-white;
+}
+
+p {
+  @apply text-silver;
+  @apply text-base;
+}

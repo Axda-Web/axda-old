@@ -1,85 +1,20 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Link from "next/link";
 
-const inter = Inter({ subsets: ['latin'] })
+import HeroImage from "./components/hero-image";
 
 export default function Home() {
   return (
     <main>
-      <div>
-        <p>
-          Get started by editing&nbsp;
-          <code >app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <section className="pb-20 flex flex-col items-center space-y-10 sm:flex-row-reverse">
+        <HeroImage />
+        <div className="flex flex-col items-center sm:items-start space-y-6 sm:justify-between">
+          <h2 className="text-4xl sm:text-7xl lg:text-heading-xl">
+            Nice to meet you! I'm <strong className="border-b-4 border-secondary">Alyx Darenne</strong>.
+          </h2>
+          <p className="text-base">Based in France, I’m a <strong>Front-end Developer</strong> passionate about building accessible web apps that users love.</p>
+          <Link href="#contact" className="uppercase border-b-2 border-secondary pb-2.5 font-bold">Contact me</Link>
         </div>
-      </div>
-
-      <div>
-        <Image
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      </section>
     </main>
-  )
+  );
 }
