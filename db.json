@@ -1,0 +1,41 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "tech": "HTML",
+      "exp": 3
+    },
+    {
+      "id": 2,
+      "tech": "CSS",
+      "exp": 3
+    },
+    {
+      "id": 3,
+      "tech": "Sass",
+      "exp": 1
+    },
+    {
+      "id": 4,
+      "tech": "JavaScript",
+      "exp": 2
+    },
+    {
+      "id": 5,
+      "tech": "Typescript",
+      "exp": 1
+    },
+    {
+      "id": 6,
+      "tech": "React",
+      "exp": 1
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Booki",
+      "stack": ["HTML", "CSS"]
+    }
+  ]
+}
