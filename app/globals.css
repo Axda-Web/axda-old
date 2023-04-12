@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-h1, h2, h3, a {
+h1, h2, h3, a, div {
   @apply text-white;
 }
 
