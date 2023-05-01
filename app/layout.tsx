@@ -24,9 +24,13 @@ export default function RootLayout({
         className={`${spaceGroteskFont.variable} font-sans bg-primary px-5 sm:px-8 lg:px-40`}
       >
         <div className="max-w-6xl mx-auto">
-          <Nav />
+          <header>
+            <Nav />
+          </header>
           {children}
-          <Nav />
+          <footer className="pb-11">
+            <Nav />
+          </footer>
         </div>
       </body>
     </html>

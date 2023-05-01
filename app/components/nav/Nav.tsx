@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Nav = () => {
   return (
-    <header className="py-5 sm:py-10 text-heading-m sm:flex sm:flex-row sm:align-middle justify-between space-y-5 sm:space-y-0 flex flex-col items-center">
+    <nav className="py-5 sm:py-10 text-heading-m sm:flex sm:flex-row sm:align-middle justify-between space-y-5 sm:space-y-0 flex flex-col items-center">
       <div className="text-white hover:text-secondary transition-colors duration-300 text-2xl sm:text-3xl">
         <Link className="text-inherit" href="/">alyxdarenne</Link>
       </div>
@@ -45,7 +45,7 @@ const Nav = () => {
           </div>
         </a>
       </div>
-    </header>
+    </nav>
   );
 };
 export default Nav;

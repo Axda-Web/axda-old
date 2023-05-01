@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const HeroImage = () => {
   const [width, setWidth] = useState(window.innerWidth);
-  let screenSize;
-  let imageWidth;
-  let imageHeight;
+  let screenSize: string;
+  let imageWidth: number;
+  let imageHeight: number;
 
   useEffect(() => {
     function handleResize() {

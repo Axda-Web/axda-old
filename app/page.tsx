@@ -3,6 +3,7 @@ import Link from "next/link";
 import HeroImage from "./components/hero-image";
 import Divider from "./components/divider";
 import SkillsSection from "./components/skills-section";
+import ContactSection from "./components/contact-section";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
             </strong>
             .
           </h2>
-          <p className="text-base">
+          <p className="text-base max-w-md">
             Based in France, I&apos;m a <strong>Front-end Developer</strong>{" "}
             passionate about building accessible web apps that users love.
           </p>
@@ -35,6 +36,8 @@ export default function Home() {
       <div className="sm:hidden">
         <Divider />
       </div>
+      <ContactSection />
+      <Divider />
     </main>
   );
 }
